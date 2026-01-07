@@ -472,3 +472,28 @@ article.guides .viewmore_btn {
     width: max-content;
     display: block;
 }
+
+article.faq_banner {
+    width: 100%;
+    height: 708px;
+    background: url(../images/bg_namsan.png) no-repeat center/ cover;
+
+}
+
+article.faq_banner .inner {
+    position: relative;
+}
+
+article.faq_banner .faq_des {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    outline: 2px solid red;
+}
+
+article.faq_banner .faq_des .faq_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
