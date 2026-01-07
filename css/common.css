@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* common.css */
+
+/* float 해제 가상요소 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 안쪽 컨텐츠 너비 */
+.inner {
+    width: 1480px;
+    margin: 0 auto;
+
+    outline: 2px solid lime;
+}
+
+/* 본면 영역 제목에 공통으로 적용될 디자인 */
+.des {
+    margin: 0 0 60px;
+    text-align: center;
+    outline: 2px solid red;
+}
+.des .des_title{
+    font-size: 50px;
+    font-weight: 700;
+    color: #222;
+    line-height: 63px;
+    margin-bottom: 30px;
+}
+.des p{
+    font-size: 22px;
+    color: #222;
+}
+
+/* body에 공통 css */
+body {
+     font-family: "Plus Jakarta Sans", sans-serif;
+     font-weight: 400;
+}
+
+.viewmore_btn {
+    background-color: #fff;
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1D546C;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: 2px solid #1D546C;
+    box-shadow: 4px 4px 0 #1D546C;
+}
+
+.go_btn {
+    background-color: #fff;
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1D546C;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: 2px solid #1D546C;
+    box-shadow: 4px 4px 0 #1D546C;
+}
