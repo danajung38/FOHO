@@ -114,16 +114,20 @@ main .main-content .search fieldset {
 main .main-image {
     background-color: aquamarine;
     width: 68%;
+    max-width: 1000px;
     height: 640px;
     border-radius: 15px;
     overflow: hidden;
 
     float: right;
+    position: relative;
 }
 
-main .main-image ul {
+main .main-image .gallery {
     width: 600%;
     height: 100%;
+
+    position: relative;
 
 }
 
@@ -135,8 +139,8 @@ main .main-image ul li {
 
 main .main-image ul li img {
     display: block;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    /* height: auto; */
 }
 
 /* //// section article.stay-type //// */
@@ -249,7 +253,7 @@ article.stay-type .stay-list {
 
 article.features {
     padding: 150px 0;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 article.features .contents {
@@ -400,7 +404,7 @@ article.why-foho .popup .benefit {
 /* //// article.guides css /////// */
 article.guides {
     width: 100%;
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 article.guides .viewer {
@@ -408,7 +412,7 @@ article.guides .viewer {
     margin-left: 4%;
     /* margin: 0 auto; */
 
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 article.guides .cards_box {
@@ -477,23 +481,29 @@ article.faq_banner {
     width: 100%;
     height: 708px;
     background: url(../images/bg_namsan.png) no-repeat center/ cover;
-
-}
-
-article.faq_banner .inner {
     position: relative;
 }
 
-article.faq_banner .faq_des {
+article.faq_banner .inner {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 50%;
+    bottom: 190px;
 
-    outline: 2px solid red;
+    transform: translateX(-50%);
+}
+
+article.faq_banner .faq_des {
+    padding-left: 100px;
 }
 
 article.faq_banner .faq_des .faq_title {
     font-size: 50px;
     font-weight: 700;
     color: #fff;
+
+    margin-bottom: 50px;
+}
+
+#footer_bg {
+    background-color: #000;
 }
