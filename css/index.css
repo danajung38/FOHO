@@ -42,6 +42,8 @@ main .main-content .search fieldset {
 }
 
 .main-content .search .search_bar {
+    /* select */
+
     width: 100%;
     height: 47px;
     border-radius: 10px;
@@ -80,7 +82,9 @@ main .main-content .search fieldset {
 
 }
 
-.main-content .search select option {}
+.main-content .search select option {
+    color: #1D546C;
+}
 
 .main-content .search input[type="date"] {
     background-image: url(../images/icon_calendar.png);
@@ -300,25 +304,52 @@ article.features .contents .b2 p {
 
 article.why-foho {
     width: 100%;
-    height: 980px;
+    /* height: 980px; */
+    padding: 120px 0;
     margin: 150px 0;
     /*     padding: 150px 0 ; */
     background-color: #F5F150;
     background: url(../images/bg_koreanstyle.jpg) no-repeat center / cover;
 }
 
+article.why-foho .inner {
+    position: relative;
+
+    /* margin-top: 100px; */
+}
+
 article.why-foho .des {
-    width: 50%;
+    /* width: 50%; */
+    float: left;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
 
-    background-color: tomato;
+    text-align: left;
+    /* margin-left: 189px; */
+}
 
+article.why-foho .des .des_title,
+article.why-foho .des p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+article.why-foho .des .emp {
+    font-size: 40px;
+    margin-bottom: 100px;
 }
 
 article.why-foho .reflet {
     width: 50%;
+    float: right;
 }
 
-.reflet .reflet_up {}
+.reflet .reflet_up {
+    display: block;
+    margin-bottom: -2px;
+}
 
 .reflet .reflet_benefits {}
 
@@ -326,8 +357,118 @@ article.why-foho .reflet {
     float: left;
 }
 
-.reflet .reflet_benefits .a~.a {
-    margin-left: -6px;
+.reflet .reflet_benefits .reflet_bottom~.reflet_bottom {
+    margin-left: 1px;
 }
 
-.reflet .reflet_benefits img {}
+.reflet .reflet_benefits img {
+    display: block;
+}
+
+article.why-foho .popup {
+    width: 100%;
+    display: none;
+}
+
+article.why-foho .popup .benefit {
+    width: 610px;
+    height: 230px;
+    background-color: #f0efef;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup .benefit .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FA6868;
+
+    margin-bottom: 20px;
+}
+
+.popup .benefit .benefit_des {
+    font-size: 18px;
+    color: #222;
+}
+
+/* //// article.guides css /////// */
+article.guides {
+    width: 100%;
+    padding: 150px 0;
+}
+
+article.guides .viewer {
+    width: 96%;
+    margin-left: 4%;
+    /* margin: 0 auto; */
+
+    margin-bottom: 80px;
+}
+
+article.guides .cards_box {
+    width: 200%;
+}
+
+article.guides .cards_box .card {
+    /*  width: 20%; */
+    width: 10.2%;
+    height: 450px;
+    padding: 0.8%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 9px 0 rgba(204, 204, 204, 0.5);
+
+    background-color: #fff;
+    border-radius: 20px;
+    float: left;
+
+    position: relative;
+}
+
+article.guides .cards_box .card~.card {
+    margin-left: 1%;
+}
+
+article.guides .cards_box .card .img_viewer {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+article.guides .cards_box .card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+article.guides .cards_box .card .card_title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+article.guides .cards_box .card .learn_btn {
+    position: absolute;
+    left: 8%;
+    bottom: 6%;
+
+    color: #1D546C;
+    font-weight: 600;
+
+}
+
+article.guides .viewmore_btn {
+    margin: 0 auto;
+    width: max-content;
+    display: block;
+}
