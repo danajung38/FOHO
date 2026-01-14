@@ -37,7 +37,7 @@ header .gnb .gnb-list {
     background-color: #1D546C;
     padding: 10px 20px;
     border-radius: 40px;
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header .gnb .gnb-list li {
@@ -52,6 +52,14 @@ header .gnb .gnb-list li a {
 }
 
 header .gnb .gnb-list li a:hover {
+    background-color: #F5F150;
+    padding: 7px 20px;
+    border-radius: 50px;
+    color: #1D546C;
+    font-weight: bold;
+}
+
+header .gnb .gnb-list li a.active {
     background-color: #F5F150;
     padding: 7px 20px;
     border-radius: 50px;
